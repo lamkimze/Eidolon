@@ -22,20 +22,20 @@ const AccountContent = () => {
     }
   }, [isLoading, user, router]);
 
-  const redirectToCustomerPortal = async () => {
-    setLoading(true);
-    try {
-      const { url, error } = await postData({
-        url: '/api/create-portal-link',
-      });
-      window.location.assign(url);
-    } catch (error) {
-      if (error) {
-        toast.error((error as Error).message);
-      }
-    }
-    setLoading(false);
-  };
+  // const redirectToCustomerPortal = async () => {
+  //   setLoading(true);
+  //   try {
+  //     const { url, error } = await postData({
+  //       url: '/api/create-portal-link',
+  //     });
+  //     window.location.assign(url);
+  //   } catch (error) {
+  //     if (error) {
+  //       toast.error((error as Error).message);
+  //     }
+  //   }
+  //   setLoading(false);
+  // };
 
   return (
     <div className='mb-7 px-6'>
@@ -47,7 +47,7 @@ const AccountContent = () => {
           </Button>
         </div>
       )}
-      {subscription && (
+      {/* {subscription && (
         <div className='flex flex-col gap-y-4'>
           <p>
             You are currently on the{' '}
@@ -59,7 +59,7 @@ const AccountContent = () => {
             onClick={redirectToCustomerPortal}
           ></Button>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
