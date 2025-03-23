@@ -29,9 +29,9 @@ const Library: React.FC<LibraryProps> = ({
             return authModal.onOpen();
         }
         // TODO: Check for subsription
-        if(!subscription){
-            return subscribeModal.onOpen();
-        }
+        // if(!subscription){
+        //     return subscribeModal.onOpen();
+        // }
 
         // Handle upload later
         return uploadModal.onOpen();

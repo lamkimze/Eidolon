@@ -21,7 +21,7 @@ export const UserContext = createContext<UserContextType | undefined>(
 
 export interface Props {
   [propName: string]: any;
-}
+} 
 
 export const MyUserContextProvider = (props: Props) => {
   const {

@@ -47,7 +47,7 @@ const AccountContent = () => {
           </Button>
         </div>
       )}
-      {/* {subscription && (
+      {subscription && (
         <div className='flex flex-col gap-y-4'>
           <p>
             You are currently on the{' '}
@@ -56,10 +56,10 @@ const AccountContent = () => {
           <Button
             disabled={loading || isLoading}
             className='w-[300px]'
-            onClick={redirectToCustomerPortal}
+            // onClick={redirectToCustomerPortal}
           ></Button>
         </div>
-      )} */}
+      )}
     </div>
   );
 };

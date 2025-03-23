@@ -13,10 +13,10 @@ const useOnPlay = (songs: Song[]) => {
     const {user, subscription} = useUser();
 
     const onPlay = (id: string) => {
-        // if(!user){
-        //     // else non-login and non-subscribe users able to play the music
-        //     return authModal.onOpen();
-        // }
+        if(!user){
+            // else non-login and non-subscribe users able to play the music
+            return authModal.onOpen();
+        }
 
         // if(!subscription){
         //     return subscribeModal.onOpen();
